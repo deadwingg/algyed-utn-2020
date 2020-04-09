@@ -1,0 +1,3 @@
+/mnt/c/Users/gomez/CLionProjects/M01E07/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/gomez/CLionProjects/M01E07/cmake-build-debug/CMakeFiles/M01E07.dir
+/mnt/c/Users/gomez/CLionProjects/M01E07/cmake-build-debug/CMakeFiles/edit_cache.dir
