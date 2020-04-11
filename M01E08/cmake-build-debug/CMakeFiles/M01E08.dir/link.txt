@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/M01E08.dir/main.cpp.o  -o M01E08 

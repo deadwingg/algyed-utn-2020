@@ -1,3 +1,0 @@
-/mnt/c/Users/gomez/CLionProjects/Algoritmos y Estructuras de datos/M01E08/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/gomez/CLionProjects/Algoritmos y Estructuras de datos/M01E08/cmake-build-debug/CMakeFiles/M01E08.dir
-/mnt/c/Users/gomez/CLionProjects/Algoritmos y Estructuras de datos/M01E08/cmake-build-debug/CMakeFiles/edit_cache.dir

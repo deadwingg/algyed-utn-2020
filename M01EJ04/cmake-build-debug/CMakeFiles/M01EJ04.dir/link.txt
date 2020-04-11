@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/M01EJ04.dir/main.cpp.o  -o M01EJ04 
