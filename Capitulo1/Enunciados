@@ -1,0 +1,69 @@
+Ejercicios
+1. Cuál de las siguientes sentencias son correctas para la ecuación algebraica y=ax3
++ 7.
+a. y = a * x * x * x + 7
+b. y = a * x * x * (x + 7)
+c. y = (a * x) * x *( x + 7)
+d. y = (a * x) * x * x + 7
+e. y = a * (x * x * x) + 7
+f. y = a * (x * x * x + 7)
+2. Escriba un programa que pida al ususrio dos números e informe la suma, la resta, el 
+producto y el cociente de los mismos
+3. Imprima un programa que imprima los números del 1 al 4 en una misma línea, hágalo de 
+las formas siguientes:
+a. Utilizando un solo operador de inserción de flujo
+b. Una única sentencia con 4 operadores de inserción de flujo
+c. Utilizando cuatro sentencias
+4. Escriba un programa que reciba tres números por el teclado e imprima la suma, el 
+promedio, el producto, el mayor y el menor de esos números. Escriba un adecuado 
+dialogo en pantalla.
+5. Escriba un programa que reciba un numero que represente el radio de un circulo e 
+imprima el diámetro, circunferencia y área.
+6. Que imprime el siguiente código
+a. std::cout << “*\n**\n***\n****” <<std::endl;
+b. std::cout << ‘A’;
+c. std::cout << static_cast< int > ‘A’; (que es static_cast? Investigue.)
+7. Utilizando solo lo que hemos desarrollado en esta introduccion escriba un programa que 
+calcule los cuadrados y los cubos de los números de 0 a 10 y los muestre por pantalla.
+8. Escriba un programa que reciba un numero entero de 5 digitos, que separe el numero en 
+sus digitoe y los muestre por pantalla, uno por línea comenzando por elmas significacivo 
+en la primera línea.
+9. Dados dos valores enteros y positivos determinar y mostrar por el dispositivo estándar de 
+salida: la suma, la resta, el producto y la división de los mismos. Analice precondiciones 
+adecuadas y utilice leyendas adecuadas. Resuelva teniendo en cuenta las precondiciones y 
+da una solución alternativa sin considerarlas.
+10. Responda: que pasa si el conjunto de datos es float, si es entero y sin la restricción de ser 
+positivo.
+11. Dada una terna de números naturales <dia, mes, año> que representan al día, al mes y al 
+año de una fecha informarla como un solo número natural de 8 dígitos (AAAAMMDD). 
+Establezca precondiciones.
+12. Dada un número natural de 8 dígitos, con formato (AAAAMMDD) descompóngalo en sus 
+elementos lógicos y muéstrelos por el dispositivo estándar de salida. 
+13. Dado un valor entero determinar y mostrar: la quinta parte del mismo, el resto de la 
+división por 5 y la tercera parte del valor del primer punto. Resuelva sin precondiciones, 
+informando por la salida estándar los resultados. 
+14. Dado una terna de valores determine e imprima: El mayor y el menor del conjunto. 
+Muestre por salida estándar con las aclaraciones que considere.
+15. Que cambios estratégicos produciría si el conjunto de valores ingresados fueran 20? Y si el 
+lote fuera de una cantidad no conocida a priori?
+16. Dadas dos ternas de valores que representan las fechas validas de nacimiento de dos 
+personas, indique cual de las dos corresponde al mayor. Utilice las leyendas que crea 
+corresponden. 
+17. Dado un par de valores que representa una el mes y año de una fecha valida del siglo XXI 
+determinar e imprimir la cantidad de días de ese mes.
+18. Dado una terna de valores enteros y positivos determinar si los mismos forman un 
+triangulo.
+19. Dado una terna de valores que representan los lados de un triangulo determinar si el tipo 
+de triangulo que forman.
+20. Dados dos números naturales M y N, determinar e imprimir cuantos múltiplos de M hay el 
+el conjunto 1 a N.
+21. Dados dos números enteros, M y N informar su producto por sumas sucesivas.
+22. Dados un conjunto de valores enteros informar el promedio de los mayores que45 y la 
+suma de los menores que –10.
+23. Dado un valor M determinar e imprimir los M primeros múltiplos de 3 que no lo sean de 5, 
+dentro del conjunto de los números naturales.
+24. Dados un conjunto de valores enteros y positivos determinar e informar el mayor
+25. Dado un conjunto de N valores informar el mayor, el menor y en qué posición del conjunto 
+fueron ingresados.
+26. Dado un conjunto de valores reales, que finaliza con un valor nulo, determinar e imprimir 
+(si hubieron valores): el máximo de los negativos y el minimo de los positivos
