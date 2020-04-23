@@ -33,3 +33,4 @@
 
 # cmake folders 
 **/cmake-build-debug
+**/.idea
