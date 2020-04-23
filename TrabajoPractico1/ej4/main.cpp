@@ -12,13 +12,15 @@
 using namespace std;
 
 int main() {
-    int numero = 9876;
+    int numero;
+    cout << "Ingrese numero entero:";
+    cin >> numero;
 
     int quintaParte = numero / 5;
     int resto = numero % 5;
     int septimaDeLaQuinta = quintaParte / 7;
 
     cout << "Quinta parte: " << quintaParte << "\tResto: " << resto
-         << "\tQuinta parte de la quinta parte: " << septimaDeLaQuinta << endl;
+         << "\tSeptima parte de la quinta parte: " << septimaDeLaQuinta << endl;
     return 0;
 }
