@@ -1,5 +1,5 @@
 /*
- *  Ejercicio 5:
+ *  Ejercicio 4:
  *  A partir de un valor entero ingresado por teclado, se pide informar:
  *  a) La quinta parte de dicho valor
  *  b) El resto de la división por 5
