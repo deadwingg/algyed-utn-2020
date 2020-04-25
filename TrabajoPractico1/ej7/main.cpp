@@ -19,6 +19,7 @@ int main() {
     int paresDeLadosIguales = 0;
 
     cout << "Ingrese lados separados por enter. Ingrese un triangulo con alguno de sus lados nulos para salir.\n";
+
     while (true){
         //ingreso terna y
         cin >> a;
