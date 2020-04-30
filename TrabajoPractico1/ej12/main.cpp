@@ -11,9 +11,9 @@
  *      2) Nro. de equipo que totalizó la menor cantidad de puntos. (hay solo uno)
  *
  *      suponemos que los datos de entrada son en formato
- *      <cantidad de equipos (n)>
- *      <n veces, por cada equipo>
- *          <n-1 resultados (p, e o g)>
+ *      <cantidad de equipos (k)>
+ *      <k veces, por cada equipo>
+ *          <k resultados>
  *
  *
  */

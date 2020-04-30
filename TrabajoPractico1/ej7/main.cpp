@@ -3,8 +3,9 @@
  * finaliza con un triángulo con un lado nulo, determinar e imprimir la cantidad de triángulos
  * equiláteros, isósceles y escálenos.
  *
- * Para la solucion asumimos que los datos ingresados son triangulos validos y que al ingresar un triangulo
- * con un lado nulo aun asi se ingresaran los 2 restantes.
+ * Para la solucion asumimos que los datos ingresados son triangulos validos
+ * y que al ingresar un triangulo con un lado nulo aun asi se ingresaran los 2 restantes.
+ *
  */
 #include <iostream>
 using namespace std;
@@ -18,7 +19,8 @@ int main() {
     //cantidades de lados iguales
     int paresDeLadosIguales = 0;
 
-    cout << "Ingrese lados separados por enter. Ingrese un triangulo con alguno de sus lados nulos para salir.\n";
+    cout << "Ingrese lados separados por enter."
+            << "Ingrese un triangulo con alguno de sus lados nulos para salir.\n";
 
     while (true){
         //ingreso terna y
