@@ -13,7 +13,7 @@
  *      suponemos que los datos de entrada son en formato
  *      <cantidad de equipos (k)>
  *      <k veces, por cada equipo>
- *          <k resultados>
+ *          <k-1 resultados>
  *
  *
  */
