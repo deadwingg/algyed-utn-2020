@@ -8,14 +8,12 @@ int main() {
     // el mayor numero positivo
     double menor = std::numeric_limits<double>::max();
 
-    double val = -1;
+    double val;
     do {
         cout << "Ingrese valor: ";
         cin >> val;
-        if (val > 0 && val < menor) {
+        if (val > 0 && val < menor)
             menor = val;
-            continue;
-        }
         if (val < 0 && val > mayor)
             mayor = val;
     } while (val != 0);
