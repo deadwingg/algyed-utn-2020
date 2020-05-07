@@ -9,6 +9,8 @@
  *  d) valor mínimo de cada sublote  -
  * Nota: el lote puede estar vacío (primer valor negativo), o puede haber uno, varios o todos los
  * sublotes vacíos (ceros consecutivos)
+ *
+ * Las posiciones de sublotes y valores son zero-based
  */
 #include <iostream>
 #include <limits>
@@ -17,7 +19,7 @@ int main() {
     cout << "Ingrese lote de numeros positivos:" << endl;
     int val;
     bool continuar = true;
-    // numero de sublote que estoy procesando
+    // numero de sublote que estoy procesando, -1 indica que no se ingreso ningun valor
     int sublote = -1;
     // subtotal dentro de ese sublote
     int subTotal = 0;
@@ -34,32 +36,42 @@ int main() {
 
     while (continuar){
         cin >> val;
+        // si el numero es menor a 0 termuno el ciclo seteando el flag a falso
         if (val < 0){
             continuar = false;
+            // si no se ingreso ningun numero lo informo
             if (sublote == -1)
                 cout << "No se ingresaron numeros." << endl;
             continue;
         }
+        // si llegue al fin del sublote
         if (val == 0) {
+            // si hubo numeros realizo los calculos para la informacion y reinicializo las variables
+            // que hacen el calculo interno por sublote
             if (subCantidad !=0){
-                cout << "Promedio del sublote " << sublote << ": " << subTotal/subCantidad << endl;
+                cout << "Promedio del sublote " << ++sublote << ": " << subTotal/subCantidad << endl;
                 cout << "Valor minimo del sublote " << sublote << ": " << minSub << endl;
+                subTotal = 0;
+                subCantidad = 0;
+                minSub = std::numeric_limits<int>::max();
+                continue;
+            } // si no seingreso ningun numero lo informo y paso al siguiente sublote
+            else{
+                cout << "Sublote" << ++sublote << " vacio." << endl;
+                continue;
             }
-            else
-                cout << "Sublote vacio." << endl;
-            subTotal = 0;
-            subCantidad = 0;
-            minSub = std::numeric_limits<int>::max();
-            sublote++;
-            continue;
         }
+        // si llegue a este punto tengo un valor para el sublote.
+        // si el sublote es el primero , le sumo uno a la cuenta de sublote para dejarlo en 0
         if (sublote == -1)
             sublote++;
         subCantidad++;
         subTotal += val;
+        // actualizo el minimo de sublote si encontre uno
         if (val < minSub){
             minSub = val;
         }
+        // si encontre un maximo general seteo el flag y guardo en aux los valores del maximo y su posicion relativa
         if (val > mayorGeneral){
             encontreMax = true;
             mayorGeneral = val;
@@ -67,6 +79,8 @@ int main() {
             posRelativaMayor = subCantidad - 1; // le resto uno para que las posiciones relativas sean 0 based.
         }
     }
+    // ya fuera del ciclo  informo los sublotes procesados y si encontre un valor maximo tambien lo informo
+    // se suma 1 a sublote para informar cantidad y no el ultimo indice
     if ( sublote > -1){
         cout << "Sublotes procesados: " << sublote + 1 << endl;
         if (encontreMax)
