@@ -7,6 +7,7 @@
     * es no nulo.
     *
     * Para obtener un resultado no entero realizamos un cast de los operandos.
+    * Para evitar un error al dividir por 0 solo informamos la division si b es distinto de 0
  */
 #include <iostream>
 using namespace std;
@@ -20,6 +21,10 @@ int main() {
     cout << "Suma: " << a + b << endl;
     cout << "Resta: " << a - b << endl;
     cout << "Producto: " << a * b << endl;
+    if (b == 0) {
+        cout << "Cociente: No se puede dividir por 0\n";
+        return 0;
+    }
     cout << "Cociente: " << static_cast<double>(a) / static_cast<double>(b) << endl;
     return 0;
 }
