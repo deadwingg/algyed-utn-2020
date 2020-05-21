@@ -12,10 +12,10 @@
  *
  *      suponemos que los datos de entrada son en formato
  *      <cantidad de equipos (k)>
- *      <k veces, por cada equipo>
- *          <k-1 resultados>
+ *      <k veces, por cada equipo, en orden>
+ *          <k-1 veces, resultado de la forma P, E, o G de los partidos, tambien en orden>
  *
- *
+ *  Asumimos que la entrada es valida en el sentido de que se corresponden los resultados entre equipos
  */
 #include <iostream>
 
@@ -26,7 +26,7 @@ int main() {
     int total = 1;
     cin >> total;
 
-    int equipos[total] = {0};;
+    int equipos[total] = {0};
     int i = 0;
     int j = 0;
     char resultado;
