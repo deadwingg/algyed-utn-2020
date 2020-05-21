@@ -2,7 +2,7 @@
  * Informar los primeros 100 números naturales y su sumatoria.
  *
  * En la solucion imprimi los numeros en una matriz para mejorar la visibilidad,
- * si es incorrecto se puede eliminar facilmente
+ *
  */
 #include <iostream>
 using namespace std;
