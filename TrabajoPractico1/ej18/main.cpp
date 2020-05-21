@@ -2,6 +2,10 @@
  * Dado un conjunto de Nombres y Fechas de nacimientos (AAAAMMDD), que
  * finaliza con un Nombre = ‘FIN’, informar el nombre de la persona con mayor edad
  * y el de la más joven.
+ * Asumimos:
+ * el FIN debe ser case sensitive
+ * las fechas son validas
+ * el nombre debe tener como maximo 9 caracteres de longitud
  */
 #include <iostream>
 #include <limits>
@@ -20,7 +24,7 @@ int main() {
     char nombreMenor[MAX_NAME_LENGTH] = {0};
 
 
-    do {
+    while (true) {
         cout << "Ingrese nombre:";
         cin >> nombre;
         if (nombre[0] == 'F' && nombre[1] == 'I' && nombre[2] == 'N'){
@@ -40,9 +44,9 @@ int main() {
                 nombreMenor[j] = nombre[j];
             }
         }
-    } while (true);
+    }
 
-    cout << "El mayor es: " << nombreMayor  << endl;
-    cout << "El menor es: " << nombreMenor  << endl;
+    cout << "La persona de mayor edad es: " << nombreMayor  << endl;
+    cout << "La persona de menor edad es: " << nombreMenor  << endl;
     return 0;
 }
