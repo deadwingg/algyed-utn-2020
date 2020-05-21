@@ -15,6 +15,6 @@ int main() {
         if (numero > mayor)
             mayor = numero;
     }
-    cout << "El mayor es: " << mayor;
+    cout << "El mayor es: " << mayor << endl;
     return 0;
 }
